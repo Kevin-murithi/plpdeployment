@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('https://plpdeployment-production.up.railway.app/api/expenses/add:user_id', {
+            const response = await fetch('https://plpdeployment-production.up.railway.app/api/expenses/add/:user_id', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
