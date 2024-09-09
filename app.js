@@ -163,7 +163,7 @@ function isAuthenticated(req, res, next) {
 }
 
 // Route to add an expense (POST /api/expenses/add)
-app.post('/api/expenses/add:user_id', isAuthenticated, (req, res) => {
+app.post('/api/expenses/add/:user_id', isAuthenticated, (req, res) => {
     const { name, amount, date, category } = req.body;
     const user_id = req.session.user_id;
 
