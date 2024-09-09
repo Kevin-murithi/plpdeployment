@@ -210,7 +210,7 @@ app.get('/api/test/count', (req, res) => {
 
 
 // Route to view expenses by user ID (GET /api/expenses/view)
-app.get('/api/expenses/view', isAuthenticated, (req, res) => {
+app.get('/api/expenses/view/:user_id', isAuthenticated, (req, res) => {
     const user_id = req.session.user_id;
 
     const query = 'SELECT * FROM expenses WHERE user_id = ?';
