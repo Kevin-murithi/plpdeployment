@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors({
-    origin: 'https://jacob-production.up.railway.app', // Your frontend URL
+    origin: 'https://plpdeployment-production.up.railway.app', // Your frontend URL
     methods: ['GET', 'POST'],
     credentials: true
 }));
@@ -31,10 +31,10 @@ app.use(session({
 
 // Create a MySQL connection using environment variables
 const db = mysql.createConnection({
-    host: 'junction.proxy.rlwy.net',
+    host: 'autorack.proxy.rlwy.net',
     user: 'root',
-    password: 'WpdpvMdmHMNRJMZxAuFyniZBwdNYaJmC',
-    port: 54417,
+    password: 'TpxyzLGmkcLOaawRBGsNIcqdNhxxaHZJ',
+    port: 10179,
     database: 'railway'
   });
   
